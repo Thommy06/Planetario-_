@@ -1,4 +1,4 @@
-﻿namespace planetario_definitivo
+﻿namespace Planetario_
 {
     partial class Form1
     {

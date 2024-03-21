@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using classe_vettori;
 using Planetario_;
 
-namespace planetario_definitivo
+namespace Planetario_
 {
     public partial class Form1 : System.Windows.Forms.Form
     {
