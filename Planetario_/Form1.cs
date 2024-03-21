@@ -268,6 +268,11 @@ namespace Planetario_
 
         private void btnStart_Paint(object sender, PaintEventArgs e)
         {
+            
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
             StampaPlanetario();
         }
     }

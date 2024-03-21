@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,8 +54,8 @@
             // 
             // listBox1
             // 
-            this.listBox1.BackColor = System.Drawing.Color.Navy;
-            this.listBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.listBox1.BackColor = System.Drawing.Color.Silver;
+            this.listBox1.ForeColor = System.Drawing.Color.Navy;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(16, 30);
@@ -109,6 +110,7 @@
             // 
             // btnAggiungi
             // 
+            this.btnAggiungi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAggiungi.BackgroundImage")));
             this.btnAggiungi.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnAggiungi.Location = new System.Drawing.Point(511, 62);
             this.btnAggiungi.Margin = new System.Windows.Forms.Padding(0);
@@ -121,6 +123,7 @@
             // 
             // btnRimuovi
             // 
+            this.btnRimuovi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRimuovi.BackgroundImage")));
             this.btnRimuovi.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnRimuovi.Location = new System.Drawing.Point(511, 96);
             this.btnRimuovi.Margin = new System.Windows.Forms.Padding(4);
@@ -133,6 +136,7 @@
             // 
             // btnPlay
             // 
+            this.btnPlay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPlay.BackgroundImage")));
             this.btnPlay.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnPlay.Location = new System.Drawing.Point(511, 132);
             this.btnPlay.Margin = new System.Windows.Forms.Padding(4);
@@ -145,8 +149,8 @@
             // 
             // txtVelocita
             // 
-            this.txtVelocita.BackColor = System.Drawing.Color.Navy;
-            this.txtVelocita.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtVelocita.BackColor = System.Drawing.Color.Silver;
+            this.txtVelocita.ForeColor = System.Drawing.Color.Navy;
             this.txtVelocita.Location = new System.Drawing.Point(320, 30);
             this.txtVelocita.Margin = new System.Windows.Forms.Padding(4);
             this.txtVelocita.Name = "txtVelocita";
@@ -155,8 +159,8 @@
             // 
             // txtSpostamento
             // 
-            this.txtSpostamento.BackColor = System.Drawing.Color.Navy;
-            this.txtSpostamento.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtSpostamento.BackColor = System.Drawing.Color.Silver;
+            this.txtSpostamento.ForeColor = System.Drawing.Color.Navy;
             this.txtSpostamento.Location = new System.Drawing.Point(320, 62);
             this.txtSpostamento.Margin = new System.Windows.Forms.Padding(4);
             this.txtSpostamento.Name = "txtSpostamento";
@@ -165,8 +169,8 @@
             // 
             // txtMassa
             // 
-            this.txtMassa.BackColor = System.Drawing.Color.Navy;
-            this.txtMassa.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtMassa.BackColor = System.Drawing.Color.Silver;
+            this.txtMassa.ForeColor = System.Drawing.Color.Navy;
             this.txtMassa.Location = new System.Drawing.Point(320, 94);
             this.txtMassa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMassa.Name = "txtMassa";
@@ -175,8 +179,8 @@
             // 
             // txtNome
             // 
-            this.txtNome.BackColor = System.Drawing.Color.Navy;
-            this.txtNome.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtNome.BackColor = System.Drawing.Color.Silver;
+            this.txtNome.ForeColor = System.Drawing.Color.Navy;
             this.txtNome.Location = new System.Drawing.Point(320, 126);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
@@ -185,8 +189,8 @@
             // 
             // cmbColore
             // 
-            this.cmbColore.BackColor = System.Drawing.Color.Navy;
-            this.cmbColore.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cmbColore.BackColor = System.Drawing.Color.Silver;
+            this.cmbColore.ForeColor = System.Drawing.Color.Navy;
             this.cmbColore.FormattingEnabled = true;
             this.cmbColore.Items.AddRange(new object[] {
             "Blu",
@@ -206,6 +210,7 @@
             // 
             this.btnStart.AutoSize = true;
             this.btnStart.BackColor = System.Drawing.SystemColors.ControlText;
+            this.btnStart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStart.BackgroundImage")));
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 80.8F);
             this.btnStart.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnStart.Location = new System.Drawing.Point(0, 2);
@@ -237,6 +242,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
             this.btnExit.Location = new System.Drawing.Point(16, 2);
             this.btnExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnExit.Name = "btnExit";
@@ -248,6 +254,7 @@
             // 
             // btnStartStop
             // 
+            this.btnStartStop.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStartStop.BackgroundImage")));
             this.btnStartStop.Location = new System.Drawing.Point(1207, 12);
             this.btnStartStop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStartStop.Name = "btnStartStop";
@@ -259,8 +266,8 @@
             // 
             // txtRaggio
             // 
-            this.txtRaggio.BackColor = System.Drawing.Color.Navy;
-            this.txtRaggio.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtRaggio.BackColor = System.Drawing.Color.Silver;
+            this.txtRaggio.ForeColor = System.Drawing.Color.Navy;
             this.txtRaggio.Location = new System.Drawing.Point(320, 158);
             this.txtRaggio.Margin = new System.Windows.Forms.Padding(4);
             this.txtRaggio.Name = "txtRaggio";
@@ -283,10 +290,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1640, 898);
+            this.Controls.Add(this.lblStart);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnStartStop);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.lblStart);
             this.Controls.Add(this.cmbColore);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtMassa);
@@ -307,6 +314,7 @@
             this.Text = "PLANETARIO";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ClientSizeChanged += new System.EventHandler(this.Form1_ClientSizeChanged);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 
