@@ -30,6 +30,14 @@ namespace Planetario_
             btnStartStop.Hide();
             btnExit.Hide();
             timer.Enabled = true;
+
+            Random random = new Random();
+            Graphics g = this.CreateGraphics();
+            for (float i = 0; i < 20; i++)
+            {
+                SolidBrush bianco = new SolidBrush(Color.White);
+                g.FillEllipse(bianco, random.Next(ClientSize.Height), random.Next(ClientSize.Width), 5, 5);
+            }
         }
 
         private void btnAggiungi_Click(object sender, EventArgs e)
@@ -132,6 +140,7 @@ namespace Planetario_
             btnRimuovi.Hide();
             cmbColore.Hide();
             txtRaggio.Hide();
+            btnSimulazione.Hide();
 
 
             StampaPlanetario();
@@ -139,6 +148,7 @@ namespace Planetario_
             btnStartStop.Visible = true;
             timer.Enabled = true;
 
+            
 
 
         }
@@ -178,6 +188,7 @@ namespace Planetario_
             btnStartStop.Location = new Point(ClientSize.Width - btnStartStop.Width - 50, 20);
             StampaPlanetario();
             planetario.Move();
+            
 
         }
 
@@ -201,6 +212,7 @@ namespace Planetario_
             btnPlay.Visible = true;
             btnRimuovi.Visible = true;
             cmbColore.Visible = true;
+            btnSimulazione.Visible = true;
 
             timer.Enabled = false;
 
@@ -264,7 +276,8 @@ namespace Planetario_
             btnAggiungi.Location = new Point(50 + listBox1.Width + 20 + label1.Width + 40 + txtMassa.Width + 40, 100);
             btnRimuovi.Location = new Point(50 + listBox1.Width + 20 + label1.Width + 40 + txtMassa.Width + 40, 180);
             btnPlay.Location = new Point(50 + listBox1.Width + 20 + label1.Width + 40 + txtMassa.Width + 40, 260);
-
+            btnSimulazione.Size = new Size(ClientSize.Width / 7, ClientSize.Height / 10);
+            btnSimulazione.Location = new Point(50 + listBox1.Width + 20 + label1.Width + 40 + txtMassa.Width + 40 + cmbColore.Width + 50, 50);
         }
 
         private void btnStart_Paint(object sender, PaintEventArgs e)
@@ -286,6 +299,46 @@ namespace Planetario_
         private void btnPlay_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void btnSimulazione_Click(object sender, EventArgs e)
+        {
+            Vettore SpostamentoSole = new Vettore(500, 500);
+            Vettore VelocitaSole = new Vettore(0, 0);
+            SolidBrush BrushSole = new SolidBrush(Color.Yellow);
+            Pianeta sole = new Pianeta(50000000000, SpostamentoSole, VelocitaSole, BrushSole, "sole", 120);
+            Vettore SpostamentoTerra = new Vettore(150, 500);
+            Vettore VelocitaTerra = new Vettore(100, -300);
+            SolidBrush BrushTerra = new SolidBrush(Color.Green);
+            Pianeta terra = new Pianeta(50, SpostamentoTerra, VelocitaTerra, BrushTerra, "terra", 30);
+            listBox1.Items.Add("sole");
+            listBox1.Items.Add("terra");
+            planetario.Pianeti.Add(sole);
+            planetario.Pianeti.Add(terra);
+
+            listBox1.Hide();
+            label1.Hide();
+            label2.Hide();
+            label3.Hide();
+            label4.Hide();
+            lblRaggio.Hide();
+            txtMassa.Hide();
+            txtSpostamento.Hide();
+            txtVelocita.Hide();
+            txtNome.Hide();
+            btnAggiungi.Hide();
+            btnPlay.Hide();
+            btnRimuovi.Hide();
+            cmbColore.Hide();
+            txtRaggio.Hide();
+            btnSimulazione.Hide();
+
+
+            StampaPlanetario();
+            btnExit.Visible = true;
+            btnStartStop.Visible = true;
+            timer.Enabled = true;
+
         }
     }
 }

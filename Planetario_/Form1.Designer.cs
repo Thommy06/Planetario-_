@@ -50,6 +50,7 @@
             this.btnStartStop = new System.Windows.Forms.Button();
             this.txtRaggio = new System.Windows.Forms.TextBox();
             this.lblRaggio = new System.Windows.Forms.Label();
+            this.btnSimulazione = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
@@ -286,6 +287,19 @@
             this.lblRaggio.TabIndex = 18;
             this.lblRaggio.Text = "Raggio";
             // 
+            // btnSimulazione
+            // 
+            this.btnSimulazione.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSimulazione.BackgroundImage")));
+            this.btnSimulazione.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.btnSimulazione.Location = new System.Drawing.Point(718, 27);
+            this.btnSimulazione.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSimulazione.Name = "btnSimulazione";
+            this.btnSimulazione.Size = new System.Drawing.Size(174, 28);
+            this.btnSimulazione.TabIndex = 19;
+            this.btnSimulazione.Text = "Simulazione di prova";
+            this.btnSimulazione.UseVisualStyleBackColor = true;
+            this.btnSimulazione.Click += new System.EventHandler(this.btnSimulazione_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -310,6 +324,7 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.txtRaggio);
             this.Controls.Add(this.lblRaggio);
+            this.Controls.Add(this.btnSimulazione);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "PLANETARIO";
@@ -343,6 +358,7 @@
         private System.Windows.Forms.Button btnStartStop;
         private System.Windows.Forms.TextBox txtRaggio;
         private System.Windows.Forms.Label lblRaggio;
+        private System.Windows.Forms.Button btnSimulazione;
     }
 }
 
