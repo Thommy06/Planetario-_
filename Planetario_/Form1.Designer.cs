@@ -146,6 +146,7 @@
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            this.btnPlay.Paint += new System.Windows.Forms.PaintEventHandler(this.btnPlay_Paint);
             // 
             // txtVelocita
             // 

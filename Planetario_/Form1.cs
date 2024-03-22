@@ -176,6 +176,7 @@ namespace Planetario_
             lblStart.Location = new Point((ClientSize.Width - lblStart.Width) / 2, ClientSize.Height - 50);
             btnExit.Location = new Point(50, 20);
             btnStartStop.Location = new Point(ClientSize.Width - btnStartStop.Width - 50, 20);
+            StampaPlanetario();
             planetario.Move();
 
         }
@@ -273,7 +274,18 @@ namespace Planetario_
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            StampaPlanetario();
+            if(timer.Enabled == true)
+            {
+                StampaPlanetario();
+            }
+
+            
+            
+        }
+
+        private void btnPlay_Paint(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }
