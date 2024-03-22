@@ -21,6 +21,7 @@ namespace Planetario_
         public Form1()
         {
             InitializeComponent();
+            
         }
 
 
@@ -31,13 +32,7 @@ namespace Planetario_
             btnExit.Hide();
             timer.Enabled = true;
 
-            Random random = new Random();
-            Graphics g = this.CreateGraphics();
-            for (float i = 0; i < 20; i++)
-            {
-                SolidBrush bianco = new SolidBrush(Color.White);
-                g.FillEllipse(bianco, random.Next(ClientSize.Height), random.Next(ClientSize.Width), 5, 5);
-            }
+            
         }
 
         private void btnAggiungi_Click(object sender, EventArgs e)
@@ -149,7 +144,6 @@ namespace Planetario_
             timer.Enabled = true;
 
             
-
 
         }
 
